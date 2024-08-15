@@ -6,7 +6,8 @@ def canUnlockAll(boxes):
     """
     It determines if all the boxes can be opened.
 
-    :param boxes: A list of lists, where each inner list contains keys to other boxes
+    :param boxes: A list of lists, where each inner
+                  list contains keys to other boxes
     :return: True if all boxes can be opened, False otherwise
     """
     if not boxes or type(boxes) is not list:
