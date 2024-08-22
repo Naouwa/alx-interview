@@ -6,18 +6,16 @@ needed to result in exactly n H characters in the file.
 
 
 def minOperations(n: int) -> int:
-    """The minimum operations needed to get n H characters"""
-    copy = "H"
-    paste = "H"
-    operation = 0
-    while (len(paste) < n):
-        if n % (len(paste)) == 0:
-            operation += 2
-            copy = paste
-            paste += paste
+    """Calculate the minimum operations needed to get n H characters"""
+    paste_str = "H"
+    operations = 0
+    while len(paste_str) < n:
+        if n % len(paste_str) == 0:
+            operations += 2
+            paste_str += paste_str
         else:
-            operation += 1
-            paste += copy
-    if (len(paste)) != n:
+            operations += 1
+            paste_str += paste_str[:len(paste_str) // 2]
+    if len(paste_str) != n:
         return 0
-    return operation
+    return operations
