@@ -5,7 +5,7 @@ needed to result in exactly n H characters in the file.
 """
 
 
-def minOperation(n: int) -> int:
+def minOperations(n: int) -> int:
     """The minimum operations needed to get n H characters"""
     copy = "H"
     paste = "H"
