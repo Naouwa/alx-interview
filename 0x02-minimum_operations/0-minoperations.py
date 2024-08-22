@@ -1,4 +1,3 @@
-what requirement does this code not respect:
 #!/usr/bin/python3
 """
 A method that calculates the fewest number of operations
