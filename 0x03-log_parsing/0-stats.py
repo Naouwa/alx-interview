@@ -9,8 +9,7 @@ if __name__ == '__main__':
 
     total_file_size = 0
     line_count = 0
-    valid_status_codes =
-    ["200", "301", "400", "401", "403", "404", "405", "500"]
+    valid_status_codes = ["200", "301", "400", "401", "403", "404", "405", "500"]
     status_code_counts = {code: 0 for code in valid_status_codes}
 
     def print_statistics(status_code_counts: dict, total_file_size: int) -> None:
