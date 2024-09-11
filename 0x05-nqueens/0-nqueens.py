@@ -46,7 +46,7 @@ def queens(n, i=0, a=[], b=[], c=[]):
 
 def solve(n):
     """ Solve the N queens problem and print each solution.
- 
+
     Args:
         n (int): Size of the board (n x n).
     """
