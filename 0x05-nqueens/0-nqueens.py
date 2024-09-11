@@ -22,14 +22,14 @@ if n < 4:
 
 def queens(n, i=0, a=[], b=[], c=[]):
     """ Recursively find all possible positions for queens on the board.
-    
+
     Args:
         n (int): Size of the board (n x n).
         i (int): Current row index.
         a (list): List of column positions of queens.
         b (list): List of diagonals (i + j) to track queen attacks.
         c (list): List of diagonals (i - j) to track queen attacks.
-        
+
     Yields:
         list: A list of queen positions.
     """
@@ -46,7 +46,7 @@ def queens(n, i=0, a=[], b=[], c=[]):
 
 def solve(n):
     """ Solve the N queens problem and print each solution.
-    
+ 
     Args:
         n (int): Size of the board (n x n).
     """
